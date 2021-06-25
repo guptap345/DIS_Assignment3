@@ -11,22 +11,21 @@
         * {
             box-sizing: border-box;
         }
-
         .bg-img {
             /* The image used */
-            background-image: url('img/analytics.jpg');
-            min-height: 380px;
+            
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             /* Needed to position the navbar */
             position: relative;
+			
         }
 
         /* Position the navbar container inside the image */
         .container {
-            position: absolute;
+            position: fixed;
             margin: 20px;   
             width: auto;
         }
@@ -94,14 +93,11 @@
 </head>
 <body>
 
-    <br>
-    <h1 align="center">Data Analytics on USA Government Websites</h1>
-    <br>
     <div class="bg-img">
         <div class="container">
             <div class="topnav" id="myTopnav">
                 <a class="active" href="index.html">Home</a>
-                <a href="agencies.html">Agencies</a>
+                <a href="web_visits.html">Web Visits</a>
                 <a href="trafficsource.html">Traffic Source</a>
                 <a href="aboutus.html">About Project</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -110,14 +106,22 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 align="center">Web Analytics on US Government Websites</h1>
+    <img src="img/analytics.jpg" alt="Trulli" width="1500" height="450">
+    <br>
+    
 
     <div style="padding-left:20px; padding-right:20px">
         <p>
-            The United States is the third most populous country in the world with an estimated population of 327,167,434 as of 2018. The United States Census Bureau shows a population increase of 0.75% for the twelve-month period ending in July 2012. Though high by industrialized country standards, this is below the world average annual rate of 1.1%. The total fertility rate in the United States estimated for 2018 is 1.73 children per woman, which is below the replacement fertility rate of approximately 2.1.
+            The mission of government is to "Be Open" by enabling the American people and an increasingly mobile workforce to access high-quality Agency data, APIs, and code anywhere, anytime, on any device. Thus, unlocking the power of government data to spur innovation across the nation and improve the quality of services for the American people.
             <br><br>
-            The American population almost quadrupled during the 20th century at a growth rate of about 1.3% a year from about 76 million in 1900 to 281 million in 2000. It is estimated to have reached the 200 million mark in 1967, and the 300 million mark on October 17, 2006. Population growth is fastest among minorities as a whole, and according to the Census Bureau's estimation for 2012, 50.4% of American children under the age of 1 belonged to racial and ethnic minority groups.
+            Therefore, they came up with Open Gov Plan 2016-2018: the General Services Administration (GSA) for 2016-2018 plans to update the Open Government Plan at least every two years, in efforts to build more transparent, engaging and responsive programs both for citizens and other agencies grow each day. As a result, government wants to hear your ideas and feedback each month here as their teams continues to report emerging programs and initiatives.
             <br><br>
-            Socioeconomic indicators like the poverty rate, population change, unemployment rate, and education levels vary across the nation. ERS has compiled the latest data on these measures into a mapping and data display/download application that allows users to identify and compare States and counties on these indicators.
+            The data for this API comes from Analytics.usa.gov, which is a unified Google Analytics account for U.S. federal government agencies known as the Digital Analytics Program. This program helps government agencies understand how people find, access, and use government services online. The program does not track individuals, and anonymizes the IP addresses of visitors.
         </p>
     </div>
     <script>
