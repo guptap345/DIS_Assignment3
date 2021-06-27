@@ -33,14 +33,14 @@
         /* The navbar */
         .topnav {
             overflow: hidden;
-            background-color: rgba(223, 144, 150, 0);
+            background-color: rgba(6, 5, 70, 0.836);
         }
 
             /* Navbar links */
             .topnav a {
                 float: left;
                 display: block;
-                color: #141414;
+                color: #f2f2f2;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
@@ -48,18 +48,30 @@
             }
 
                 .topnav a:hover {
-                    background-color: rgb(243, 226, 226);
-                    color: black;
+                    background-color: #ddd;
+                    color: rgb(121, 8, 8);
                 }
 
                 .topnav a.active {
-                    background-color: #8b2b30;
+                    background-color: rgba(148, 8, 20, 0.836);
                     color: white;
                 }
 
             .topnav .icon {
                 display: none;
             }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
 
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {
